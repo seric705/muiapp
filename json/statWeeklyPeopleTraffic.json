@@ -1,0 +1,35 @@
+{
+	"code": "0",
+	"message": "",
+	"data": [
+		{
+			"beginDate": "2013-11-11",
+			"endDate": "2013-11-11",
+			"traffic": 111
+		}, {
+			"beginDate": "2013-12-11",
+			"endDate": "2013-12-11",
+			"traffic": 222
+		}, {
+			"beginDate": "2013-12-12",
+			"endDate": "2013-12-13",
+			"traffic": 312
+		}, {
+			"beginDate": "2013-02-12",
+			"endDate": "2013-02-13",
+			"traffic": 445
+		}, {
+			"beginDate": "2015-02-12",
+			"endDate": "2015-02-13",
+			"traffic": 675
+		}, {
+			"beginDate": "2003-02-12",
+			"endDate": "2003-02-13",
+			"traffic": 346
+		}, {
+			"beginDate": "2013-02-12",
+			"endDate": "2015-02-13",
+			"traffic": 862
+		}
+	]
+}

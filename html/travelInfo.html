@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>旅游资讯</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/app.css" rel="stylesheet" />
+		<link href="../css/travelStrategy.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--logo图片-->
+			<div class="logoPicBox"></div>
+			<!--资讯标题作者时间-->
+			<div class="infoHeader">
+				<h1></h1>
+				<span class="data"></span>
+				<span class="author"></span>
+			</div>
+			<!--模块列表-->
+			<div class="mui-content-padded">
+				
+			</div>
+			<!--下载链接-->
+			<div class="downloadBox">
+				<img src="../images/downloadText.png"/>
+			<!--	<button></button>-->
+			</div>
+		</div>
+		<!--微信链接-->
+		<div class="popup active js-download" id="js-download" style="display:none;">
+			<p class="popup-tip">点击
+				<em>右上角</em>按钮在浏览器打开</p>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/mui.zoom.js"></script>
+	<script src="../js/mui.previewimage.js"></script>
+	<script src="../js/jquery-2.1.0.js"></script>
+	<script src="../js/travelInfo.js"></script>
+	<script src="../js/downloadApp.js" ></script>
+	<script>
+		mui.previewImage();
+		var travelInfo = new TravelInfo();
+	</script>
+
+</html>

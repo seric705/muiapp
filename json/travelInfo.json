@@ -1,0 +1,107 @@
+{
+	"status": "ok",
+	"msg": {
+		"travelInfo": {
+			"id": "ti00001",
+			"title": "2015西行说的是漫记之青海敦煌8日精彩环线",
+			"logoPic": "../images/001.jpg",
+			"AuthorName": "小林",
+			"date": "2015-01-02",
+			"modelList": [
+				{
+					"type": "synopsis",
+					"text": "我是萌萌的简介我是萌萌的简介我是<br>萌萌的简介我是萌萌的简介我是萌萌的简介"
+				},{
+					"type": "synopsis2",
+					"text": "我是萌萌的简介我是萌萌的简介我是<br>萌萌的简介我是萌萌的简介我是萌萌的简介"
+				},{
+					"type": "modelTitle",
+					"upText": "我是山标题",
+					"downText": "私自说说"
+				},{
+					"type": "titleWithCloud",
+					"text": "我是山标题"
+				},{
+					"type": "moreTitle",
+					"titleType":"type1",
+					"upText": "我是山标题",
+					"downText": "私自说说",
+					"fontColor": "black",
+					"backColor": "red"
+				},{
+					"type": "moreTitle",
+					"titleType":"type2",
+					"upText": "我是山标题",
+					"downText": "私自说说",
+					"fontColor": "red"
+				},{
+					"type": "moreTitle",
+					"titleType":"type3",
+					"upText": "我是山标题",
+					"downText": "私自说说",
+					"fontColor": "red"
+				},{
+					"type": "pic",
+					"picUrl": "../images/002.jpg",
+					"text": "sdasdasd1"
+				}, {
+					"type": "route",
+					"List": [
+						{
+							"key": "D1",
+							"value": "金殿－大坝－西山－电车－大坝－西山－电车－大坝－西山－电车－大坝－西山－电车"
+						}, {
+							"key": "D2",
+							"value": "大坝－西山－电车"
+						}, {
+							"key": "D2",
+							"value": "大坝－西山－电车"
+						}, {
+							"key": "D2",
+							"value": "大坝－西山－电车"
+						}
+					]
+				}, {
+					"type": "titleWithIcon",
+					"iconURL": "../images/003.jpg",
+					"text": "石林风景区"
+				}, {
+					"type": "pic",
+					"picUrl": "../images/004.jpg",
+					"text": "sdasdasd1"
+				}, {
+					"type": "text",
+					"text": "我只是普通的文字我只是普通的文"
+				},
+				 {
+					"type": "text",
+					"text": "我只是普通的文字我只是普通的文字我只是"
+				}, {
+					"type": "textWithPoint",
+					"pointColor": "red",
+					"text": "我只是普通的文字我只是普通的文我只是普通的文字我只是普通<br>的文我只是普通的文字我只是普通的文"
+				}, {
+					"type": "bubble",
+					"List": [
+						{
+							"key": "交通",
+							"value": "金殿－大坝－西山－电车－大坝－西山－电车－大坝－西山－电车－大坝－西山－电车"
+						}, {
+							"key": "门票",
+							"value": "大坝－西山－电车"
+						}, {
+							"key": "开放时间",
+							"value": "大坝－西山－电车"
+						}
+					]
+				}, {
+					"type": "lines",
+					"color": "red"
+				},{
+				  "type":"block",
+				  "height":"20px"
+				}
+			]
+		}
+	}
+}

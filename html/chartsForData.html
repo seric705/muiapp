@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="description" content="景区数据展示" />
+		<title>景区数据展示</title>
+
+		<link rel="stylesheet" href="../css/android-ics.css" />
+		<link rel="stylesheet" href="../css/animation.css" />
+		<link rel="stylesheet" href="../css/core.css" />
+
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/chartsForData.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--顶部数据展示模块-->
+		<header id="lastTraffic" class="header">
+			<span class="total">
+				<b>7,890</b>
+				<i>今日累计</i>
+			</span>
+			<span class="current">
+				<b>886</b>
+				<i>瞬时客流</i>
+			</span>
+			<i class="updataTime">更新时间：2015-02-12 15:12</i>
+		</header>
+
+		<!--实时数据图表模块-->
+		<div id="actualBox" class="chartsBox">
+			<div class="chartsHeader">
+				<span class="chartsTitle">
+					实时数据
+				</span>
+				<button data-type = 'showTableBtn' class="showTableBtn"></button>
+				<button data-type = 'showChartsBtn' class="showChartsBtn checked"></button>
+				<div class="pickDate">
+					<input type="text" value="2016-03-22" />
+					<i class="pickDate-icon"></i>
+				</div>
+			</div>
+			<table class="dataTable">
+				<thead>
+					<tr>
+						<th>时间</th>
+						<th>实时数据</th>
+						<th>昨日同比</th>
+						<th>上周同比</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--<tr>
+						<td>8:00</td>
+						<td>300</td>
+						<td>344</td>
+						<td>344</td>
+					</tr>
+					<tr>
+						<td>8:00</td>
+						<td>300</td>
+						<td>344</td>
+						<td>344</td>
+					</tr>
+					<tr>
+						<td>8:00</td>
+						<td>300</td>
+						<td>344</td>
+						<td>344</td>
+					</tr>-->
+				</tbody>
+			</table>
+			<div id="actualChart" class="echarts"></div>
+		</div>
+		<!--累计数据图表模块-->
+		<div id="totalBox" class="chartsBox">
+			<div class="chartsHeader">
+				<span class="chartsTitle">
+					累计数据
+				</span>
+				<button data-type = 'showTableBtn' class="showTableBtn"></button>
+				<button data-type = 'showChartsBtn' class="showChartsBtn checked"></button>
+				<div class="pickDate">
+					<input type="text" value="2016-03-22" />
+					<i class="pickDate-icon"></i>
+				</div>
+			</div>
+			<table class="dataTable">
+				<thead>
+					<tr>
+						<th>时间</th>
+						<th>客流量</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2012-11-11</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>2012-11-11</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>2012-11-11</td>
+						<td>300</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="totalChart" class="echarts"></div>
+		</div>
+		<!--客流量占比图标模块-->
+		<div class="chartsBox">
+			<div class="chartsHeader">
+				<span class="chartsTitle">
+					客流量占比
+				</span>
+				<div class="pickDate">
+					<input type="text" value="2016-03-22" />
+					<i class="pickDate-icon"></i>
+				</div>
+			</div>
+			<div id="pieChart" class="echarts"></div>
+			<div class="pieChart-changeData">
+				<input type="radio" name="changeData" checked="checked"/>按日统计
+				<input type="radio" name="changeData"/>按周统计
+				<input type="radio" name="changeData"/>按月统计
+				<span>2016-03-11至2016-03-18</span>
+			</div>
+			<table class="pieDataTable">
+				<thead>
+					<tr>
+						<th>景点</th>
+						<th>百分比</th>
+						<th>客流量</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><i></i>故宫博物院</td>
+						<td>15%</td>
+						<td>42326</td>
+					</tr>
+					<tr>
+						<td><i></i>颐和园</td>
+						<td>13%</td>
+						<td>38326</td>
+					</tr>
+					<tr>
+						<td><i></i>八达岭长城</td>
+						<td>300%</td>
+						<td>344</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script src="../js/jquery-2.1.0.js"></script>
+	<!--截屏使用-->
+	<!--<script src="../js/html2canves.js"></script>-->
+	<!--echarts图表-->
+	<script src="../js/echarts.min.js"></script>
+	<!--图表主题，注意必须放在echarts.js之后引用-->
+	<script src="../js/macarons.js"></script>
+    <!--日期控件-->
+	<script src="../js/my-mobiscroll.js"></script>
+	<!--统计最新客流量-->
+	<script src="../js/lastTraffic.js"></script>
+	<!--折线图-->
+	<script src="../js/actualChart.js" ></script>
+	<!--柱状图-->
+	<script src="../js/totalChart.js"></script>
+	<!--饼状图-->
+	<script src="../js/pieChart.js"></script>
+	
+	<script src="../js/chartsForData.js"></script>
+
+	<!--<script type="text/javascript">
+		$(document).ready(function() {
+			$(".header").on("click", function(event) {
+				event.preventDefault();
+				html2canvas(document.body, {
+					allowTaint: true,
+					taintTest: false,
+					onrendered: function(canvas) {
+						canvas.id = "mycanvas";
+						//document.body.appendChild(canvas);
+						//生成base64图片数据
+						var dataUrl = canvas.toDataURL();
+						var newImg = document.createElement("img");
+						newImg.src = dataUrl;
+						document.body.appendChild(newImg);
+					}
+				});
+			});
+		});
+	</script>-->
+
+</html>

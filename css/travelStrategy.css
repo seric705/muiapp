@@ -1,0 +1,815 @@
+/*自定义字体*/
+
+@font-face {
+	font-family: "myFont";
+	src: url('../fonts/myFont.otf') format('truetype');
+}
+
+html,
+.mui-content {
+	background-color: #FFFFFF;
+}
+
+
+/*为了留出底部播放器的空白*/
+
+.mui-content {
+	padding-bottom: 65px;
+}
+
+.mui-content-padded {
+	margin: 10px 10px 30px;
+}
+
+
+/*logo图片*/
+
+.logoPicBox {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	/*background-image: url(../../images/muwu.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
+
+
+/*大小标题*/
+
+.titleGroup {
+	position: relative;
+	padding: 0px;
+	text-align: center;
+}
+
+.titleGroup * {
+	display: inline-block;
+	position: relative;
+	margin: 0px;
+	padding: 10px;
+	font-weight: normal;
+	color: #333333;
+}
+
+.titleGroup h1 {
+	font-size: 20px;
+	line-height: 25px;
+	border-bottom: 1px solid #333333;
+	max-width: 70%;
+}
+
+.titleGroup h1:before,
+.titleGroup h1:after {
+	position: absolute;
+	bottom: -3px;
+	left: -12px;
+	content: '';
+	height: 5px;
+	width: 5px;
+	background-color: #333333;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.titleGroup h1:after {
+	left: auto;
+	right: -12px;
+}
+
+.titleGroup h2 {
+	display: block;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+
+/*模块间距*/
+
+section {
+	position: relative;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+
+/*简介*/
+
+.synopsis {
+	background-color: #F4F5F6;
+	padding: 10px;
+	border-radius: 5px;
+	/*font-style: italic;*/
+	font-size: 14px;
+	color: #666666;
+}
+
+.synopsis2 {
+	border: 1px dashed #C8E0EC;
+	padding: 10px;
+	border-radius: 5px;
+	/*font-style: italic;*/
+	font-size: 14px;
+	color: #666666;
+}
+
+
+/*带云的标题*/
+
+.titleWithCloud {
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.titleWithCloud div {
+	position: relative;
+	display: inline-block;
+	color: #333333;
+	font-size: 20px;
+}
+
+.titleWithCloud i {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	background-image: url(../images/cloud_03.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.titleWithCloud .cloud2 {
+	margin-left: 10px;
+	margin-right: 0px;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+
+/*花式标题*/
+
+.modelTitle {
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.modelTitle div {
+	position: relative;
+	display: inline-block;
+	min-width: 200px;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+.modelTitle div:before,
+.modelTitle div:after {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: -15px;
+	border-top: 10px solid #02B4E6;
+	border-right: 20px solid #02B4E6;
+	border-bottom: 10px solid #02B4E6;
+	border-left: 5px solid transparent;
+}
+
+.modelTitle div:after {
+	left: auto;
+	right: -15px;
+	border-left: 20px solid #02B4E6;
+	border-right: 5px solid transparent;
+}
+
+.modelTitle span {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	background-color: #1FCFFF;
+	z-index: 2;
+}
+
+.modelTitle span:before,
+.modelTitle span:after {
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	content: '';
+	border-top: 5px solid #0180A4;
+	border-right: 5px solid #0180A4;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.modelTitle span:after {
+	left: auto;
+	right: 0px;
+	border-right: 5px solid transparent;
+	border-left: 5px solid #0180A4;
+}
+
+.modelTitle h3 {
+	margin: 0px;
+	padding: 10px 0 0;
+	font-family: "myFont";
+	font-size: 20px;
+	font-weight: normal;
+	color: #36D1FE;
+}
+
+
+/*更多的标题*/
+
+.moreTitle {
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+.moreTitle div {
+	position: relative;
+	padding: 10px;
+	color: #FFFFFF;
+	background-color: #1FCFFF;
+	font-size: 17px;
+}
+
+.moreTitle h1,
+.moreTitle h2 {
+	position: relative;
+	margin: 0px;
+	padding: 5px 10px;
+	font-weight: normal;
+	color: #333333;
+}
+
+.moreTitle h1 {
+	display: block;
+	font-size: 20px;
+	line-height: 25px;
+	color: #1FCFFF;
+}
+
+.moreTitle h2 {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.moreTitle h2:before,
+.moreTitle h2:after {
+	position: absolute;
+	top: 13px;
+	left: -10px;
+	content: '';
+	height: 5px;
+	width: 5px;
+	background-color: #1FCFFF;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.moreTitle h2:after {
+	left: auto;
+	right: -10px;
+}
+
+.moreTitle fieldset {
+	border-color: #1ECFFF;
+}
+
+.moreTitle legend {
+	text-align: left;
+	color: #1ECFFF;
+	padding: 5px;
+}
+
+
+/*路线*/
+
+.route p {
+	overflow: hidden;
+	margin: 0px;
+}
+
+.route b,
+.route span {
+	float: left;
+	width: 20%;
+	display: inline-block;
+	word-wrap: break-word;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333333;
+}
+
+.route span {
+	width: 80%;
+}
+
+
+/*带图标的小标题*/
+
+.titleWithIcon i {
+	vertical-align: text-bottom;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #36D1FE;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.titleWithIcon h4 {
+	padding-left: 10px;
+	display: inline-block;
+	margin: 0;
+	font-weight: normal;
+}
+
+
+/*图片,视频,文字模块*/
+
+section img {
+	width: 100%;
+	height: auto;
+}
+
+section video {
+	width: 100%;
+	height: auto;
+}
+
+section video.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+
+.pic p,
+.video p,
+.text p,
+.textWithPoint p {
+	color: #333333;
+	word-break: break-all;
+	text-align: inherit;
+	margin: 0px;
+}
+
+.textWithPoint p {
+	position: relative;
+	padding-left: 20px;
+}
+
+.textWithPoint p:before {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	content: '';
+	height: 10px;
+	width: 10px;
+	background-color: #1FCFFF;
+	border-radius: 50%;
+}
+
+.video button {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 80px;
+	height: 80px;
+	margin-top: -40px;
+	margin-left: -40px;
+	border: 0px;
+	border-radius: 50%;
+	background: url(../images/video_btn.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.pic p,
+.video p {
+	position: relative;
+	text-indent: 20px;
+}
+
+.pic p:before,
+.video p:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	border-top: 3px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #1FCFFF;
+	border-left: 5px solid transparent;
+}
+
+
+/*.video{
+	min-height: 200px;
+}
+.video img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.video p{
+	position: absolute;
+	bottom: -34px;
+}*/
+
+
+/*气泡模块*/
+
+.bubble {
+	margin-top: 20px;
+	background-color: #F4F5F6;
+	border-radius: 0px 5px 5px 5px;
+	padding: 10px;
+}
+
+.bubble:before {
+	content: '';
+	position: absolute;
+	top: -19px;
+	left: 0px;
+	border-top: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #F4F5F6;
+	border-left: 10px solid #F4F5F6;
+}
+
+.bubble p {
+	overflow: hidden;
+	margin: 0px;
+}
+
+.bubble b,
+.bubble span {
+	float: left;
+	width: 25%;
+	display: inline-block;
+	word-wrap: break-word;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333333;
+}
+
+.bubble span {
+	width: 75%;
+}
+
+
+/*分割线模块*/
+
+.lines {
+	margin: 20px 0;
+	height: 1px;
+	background-color: #E3E4E4;
+}
+
+
+/*相关推荐*/
+
+.recommendBox div {
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+	display: none;
+}
+
+.recommendBox div button {
+	display: block;
+	color: #ffffff;
+	font-size: 30px;
+	line-height: 30px;
+	padding: 0px;
+	margin: 10px auto;
+	width: 40px;
+	height: 40px;
+	border: 0px;
+	border-radius: 50%;
+	background-color: #CCCCCC;
+}
+
+.recommendList {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	/*display: none;*/
+}
+
+.recommendList.fixX {
+	overflow: hidden;
+}
+
+.recommendList li {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.recommendList button {
+	display: block;
+	margin: 10px auto;
+	width: 80px;
+	height: 80px;
+	border: 0px;
+	border-radius: 50%;
+	background-color: #36D1FE;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-transform: scale(1.05);
+}
+
+.recommendList span,
+.recommendList p {
+	display: block;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	color: #333333;
+}
+
+.recommendList span {
+	white-space: normal;
+	overflow: auto;
+	text-overflow: clip;
+	word-wrap: break-word;
+}
+
+.recommendList p {
+	font-size: 14px;
+	color: #8f8f94;
+}
+
+
+/*音频播放器*/
+
+.talkPlayer {
+	visibility: hidden;
+	position: fixed;
+	width: 100%;
+	bottom: -1px;
+	padding: 10px 10px 10px 60px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.PlayerBtn {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 40px;
+	height: 40px;
+	border: 0px;
+	border-radius: 50%;
+	background-image: url(../images/icons.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 80px;
+	background-color: transparent;
+	-webkit-transition-duration: 0s;
+	transition-duration: 0s;
+}
+
+.PlayerBtn.play {
+	background-position: 0 0;
+}
+
+.PlayerBtn.pause {
+	background-position: 0 -43px;
+}
+
+input.playRange[type="range"] {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 1px;
+	width: 100%;
+	-webkit-appearance: none;
+	height: 2px;
+}
+
+input.playRange[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	cursor: default;
+	/*top: -5px;*/
+	height: 15px;
+	width: 15px;
+	background: #1ecfff;
+	border-radius: 50%;
+	border: 0px;
+}
+
+.nowTime,
+.playTime {
+	font-size: 11px;
+	color: #CCCCCC;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.playTime {
+	float: right;
+}
+
+.rangeBox {
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 1px;
+	width: 100%;
+	height: 2px;
+	margin: 10px 0;
+}
+
+.rangeLength {
+	background: #1ecfff;
+	border-radius: 1px;
+	width: 0%;
+	height: 2px;
+}
+
+.rangeHand {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	height: 40px;
+	width: 40px;
+	padding: 12px;
+}
+
+.rangeHand i {
+	display: block;
+	height: 16px;
+	width: 16px;
+	background: #1ecfff;
+	border-radius: 50%;
+	border: 0px;
+}
+
+
+/*景区概括页头部样式*/
+
+.spotHead {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	/*background-image: url(../../images/muwu.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0px -30px 30px rgba(0, 0, 0, 0.6) inset;
+}
+
+.spotHead i {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	padding: 5px 5px 0;
+	width: 40px;
+	background-color: rgba(54, 209, 254, 0.7);
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+.spotHead i:before {
+	position: absolute;
+	content: "";
+	height: 0px;
+	width: 0px;
+	left: 0px;
+	bottom: -11px;
+	border-top: 1px solid rgba(54, 209, 254, 0.7);
+	border-right: 20px solid rgba(54, 209, 254, 0.7);
+	border-left: 20px solid rgba(54, 209, 254, 0.7);
+	border-bottom: 10px solid transparent;
+}
+
+.spotHead a {
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.spotHead .phone {
+	background-image: url(../images/btn_tel@2x.png);
+}
+
+.spotHead .location {
+	background-image: url(../images/btn_address@2x.png);
+	left: 70px;
+}
+
+.spotHead p {
+	position: absolute;
+	left: 120px;
+	bottom: 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: justify;
+	text-shadow: 1px 1px 1px #000000;
+	margin: 0px;
+	padding: 10px;
+}
+
+.spotInfo {
+	border-bottom: 10px solid #f5f5f5;
+}
+
+.spotInfo h1 {
+	color: #333333;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.spotInfo p {
+	color: #666666;
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px 10px 10px;
+}
+
+.spotInfo p:last-child {
+	padding: 0px 10px 15px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+
+/*遮罩蒙板*/
+
+.cover {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 999;
+}
+
+
+/*电话列表*/
+
+.phoneList {
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	list-style: none;
+	margin-left: -75px;
+	padding: 5px 0px;
+	border-radius: 10px;
+	width: 150px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.phoneList li {
+	padding: 5px;
+}
+
+
+/*资讯标题部分*/
+
+.infoHeader {
+	position: relative;
+	width: 100%;
+	padding: 20px 20px 10px;
+	overflow: hidden;
+	font-size: 14px;
+	text-align: center;
+	color: #333333;
+}
+
+.infoHeader h1 {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: normal;
+	max-height: 50px;
+	overflow: hidden;
+}
+
+.infoHeader span {
+	display: inline-block;
+	width: 49%;
+	padding: 5px;
+}
